@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>An Empirical Study on the Practice of Maintaining Object-Relational Mapping Code in Java Systems - SWAG Lab</title>
+        <link rel="stylesheet" href="/dist/assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+              crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/dist/assets/img/favicon.png"/>
+        
+
+    <link rel="stylesheet" href="/dist/assets/css/publications/specific.css">
+
+
+    </head>
+
+    <body>
+
+        
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 py-3 bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dist/"><img height="30" src="/dist/assets/img/SWAGLogoWhite.png" alt="SWAG Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/index.html">Home</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/members.html">Members</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/publications.html">Publications</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/teaching.html">Teaching</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/tools.html">Tools</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/funding-partners.html">Funding Partners</a>
+                        
+                    </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+
+        <h1 class="display-6">An Empirical Study on the Practice of Maintaining Object-Relational Mapping Code in Java Systems</h1>
+
+        
+        
+            <p class="fs-4"><b>Authors:</b>
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Tse-Hsun Chen</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Weiyi Shang</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Jinqiu Yang</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Ahmed E. Hassan</span>
+                    
+                
+                    
+                        <a href="/dist/members/michael-godfrey.html"><span class="badge bg-secondary text-dark">Michael W. Godfrey</span></a>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Mohamed Nasser</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Parminder Flora</span>
+                    
+                
+            </p>
+        
+
+        
+        <p class="fs-4"><b>Venue:</b>
+            
+                <a href="/dist/venues/MSR.html"><span class="badge bg-secondary text-dark">MSR</span></a>
+                &nbsp;
+            
+            2016 IEEE/ACM 13th Working Conference on Mining Software Repositories (MSR), pp. 165-176, 2016
+        </p>
+
+        
+            <p class="fs-4"><b>Year:</b>
+                <a href="/dist/years/2016.html"><span
+                        class="badge bg-secondary text-dark">2016</span></a>
+            </p>
+        
+
+        
+        
+
+        
+        
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Databases have become one of the most important components in modern software systems. For example, web services, cloud computing systems, and online transaction processing systems all rely heavily on databases. To abstract the complexity of accessing a database, developers make use of Object-Relational Mapping (ORM) frameworks. ORM frameworks provide an abstraction layer between the application logic and the underlying database. Such abstraction layer automatically maps objects in Object-Oriented Languages to database records, which significantly reduces the amount of boilerplate code that needs to be written. Despite the advantages of using ORM frameworks, we observe several difficulties in maintaining ORM code (i.e., code that makes use of ORM frameworks) when cooperating with our industrial partner. After conducting studies on other open source systems, we find that such difficulties are common in other Java systems. Our study finds that i) ORM cannot completely encapsulate database accesses in objects or abstract the underlying database technology, thus may cause ORM code changes more scattered; ii) ORM code changes are more frequent than regular code, but there is a lack of tools that help developers verify ORM code at compilation time; iii) we find that changes to ORM code are more commonly due to performance or security reasons; however, traditional static code analyzers need to be extended to capture the peculiarities of ORM code in order to detect such problems. Our study highlights the hidden maintenance costs of using ORM frameworks, and provides some initial insights about potential approaches to help maintain ORM code. Future studies should carefully examine ORM code, especially given the rising use of ORM in modern software systems.</p>
+        
+
+        
+
+        
+        
+
+        <p class="fs-4"><b>BibTeX:</b></p>
+        <div class="copy-code">
+            <pre><code>@inproceedings{tse-hsunchen2016aesotpomomcijs,
+    author = &#34;Tse-Hsun Chen and Weiyi Shang and Jinqiu Yang and Ahmed E. Hassan and Michael W. Godfrey and Mohamed Nasser and Parminder Flora&#34;,
+    title = &#34;An Empirical Study on the Practice of Maintaining Object-Relational Mapping Code in Java Systems&#34;,
+    year = &#34;2016&#34;,
+    pages = &#34;165-176&#34;,
+    booktitle = &#34;Proceedings of 2016 IEEE/ACM 13th Working Conference on Mining Software Repositories (MSR)&#34;
+}
+</code></pre>
+        </div>
+        <p class="fs-4"><b>Plain Text:</b></p>
+        <div class="copy-code">
+            <pre><code>Tse-Hsun Chen, Weiyi Shang, Jinqiu Yang, Ahmed E. Hassan, Michael W. Godfrey, Mohamed Nasser, and Parminder Flora, &#34;An Empirical Study on the Practice of Maintaining Object-Relational Mapping Code in Java Systems,&#34; 2016 IEEE/ACM 13th Working Conference on Mining Software Repositories (MSR), pp. 165-176</code></pre>
+        </div>
+
+    </div>
+
+
+
+        <ul class="nav justify-content-center credits pt-4 pb-3">
+            <li class="nav-item">
+                <h6>Designed and built by <a target="_blank" href="https://vishnus.me">Vishnu Satish</a></h6>
+            </li>
+        </ul>
+
+        
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1220">
+    <div id="copy-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Copied text.
+        </div>
+    </div>
+</div>
+
+        <script src="/dist/assets/js/bootstrap.min.js"></script>
+        <script src="/dist/assets/js/main.js"></script>
+
+    </body>
+
+</html>

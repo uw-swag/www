@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Use of Summation to Aggregate Software Metrics Hinders the Performance of Defect Prediction Models - SWAG Lab</title>
+        <link rel="stylesheet" href="/dist/assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+              crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/dist/assets/img/favicon.png"/>
+        
+
+    <link rel="stylesheet" href="/dist/assets/css/publications/specific.css">
+
+
+    </head>
+
+    <body>
+
+        
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 py-3 bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dist/"><img height="30" src="/dist/assets/img/SWAGLogoWhite.png" alt="SWAG Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/index.html">Home</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/members.html">Members</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/publications.html">Publications</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/teaching.html">Teaching</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/tools.html">Tools</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/funding-partners.html">Funding Partners</a>
+                        
+                    </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+
+        <h1 class="display-6">The Use of Summation to Aggregate Software Metrics Hinders the Performance of Defect Prediction Models</h1>
+
+        
+        
+            <p class="fs-4"><b>Authors:</b>
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Feng Zhang</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Ahmed E. Hassan</span>
+                    
+                
+                    
+                        <a href="/dist/members/shane-mcintosh.html"><span class="badge bg-secondary text-dark">Shane McIntosh</span></a>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Ying Zou</span>
+                    
+                
+            </p>
+        
+
+        
+        <p class="fs-4"><b>Venue:</b>
+            
+                <a href="/dist/venues/TSE.html"><span class="badge bg-secondary text-dark">TSE</span></a>
+                &nbsp;
+            
+            IEEE Transactions on Software Engineering, Vol. 43, No. 5, pp. 476-491, 2017
+        </p>
+
+        
+            <p class="fs-4"><b>Year:</b>
+                <a href="/dist/years/2017.html"><span
+                        class="badge bg-secondary text-dark">2017</span></a>
+            </p>
+        
+
+        
+        
+
+        
+        
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Defect prediction models help software organizations to anticipate where defects will appear in the future. When training a defect prediction model, historical defect data is often mined from a Version Control System (VCS, e.g., Subversion), which records software changes at the file-level. Software metrics, on the other hand, are often calculated at the class- or method-level (e.g., McCabe's Cyclomatic Complexity). To address the disagreement in granularity, the class- and method-level software metrics are aggregated to file-level, often using summation (i.e., McCabe of a file is the sum of the McCabe of all methods within the file). A recent study shows that summation significantly inflates the correlation between lines of code (Sloc) and cyclomatic complexity (Cc) in Java projects. While there are many other aggregation schemes (e.g., central tendency, dispersion), they have remained unexplored in the scope of defect prediction. In this study, we set out to investigate how different aggregation schemes impact defect prediction models. Through an analysis of 11 aggregation schemes using data collected from 255 open source projects, we find that: (1) aggregation schemes can significantly alter correlations among metrics, as well as the correlations between metrics and the defect count; (2) when constructing models to predict defect proneness, applying only the summation scheme (i.e., the most commonly used aggregation scheme in the literature) only achieves the best performance (the best among the 12 studied configurations) in 11 percent of the studied projects, while applying all of the studied aggregation schemes achieves the best performance in 40 percent of the studied projects; (3) when constructing models to predict defect rank or count, either applying only the summation or applying all of the studied aggregation schemes achieves similar performance, with both achieving the closest to the best performance more often than the other studied aggregation schemes; and (4) when constructing models for effort-aware defect prediction, the mean or median aggregation schemes yield performance values that are significantly closer to the best performance than any of the other studied aggregation schemes. Broadly speaking, the performance of defect prediction models are often underestimated due to our community's tendency to only use the summation aggregation scheme. Given the potential benefit of applying additional aggregation schemes, we advise that future defect prediction models should explore a variety of aggregation schemes.</p>
+        
+
+        
+
+        
+        
+
+        <p class="fs-4"><b>BibTeX:</b></p>
+        <div class="copy-code">
+            <pre><code>@article{fengzhang2017tuostasmhtpodpm,
+    author = &#34;Feng Zhang and Ahmed E. Hassan and Shane McIntosh and Ying Zou&#34;,
+    title = &#34;The Use of Summation to Aggregate Software Metrics Hinders the Performance of Defect Prediction Models&#34;,
+    year = &#34;2017&#34;,
+    pages = &#34;476-491&#34;,
+    journal = &#34;IEEE Transactions on Software Engineering&#34;,
+    volume = &#34;43&#34;,
+    number = &#34;5&#34;
+}
+</code></pre>
+        </div>
+        <p class="fs-4"><b>Plain Text:</b></p>
+        <div class="copy-code">
+            <pre><code>Feng Zhang, Ahmed E. Hassan, Shane McIntosh, and Ying Zou, &#34;The Use of Summation to Aggregate Software Metrics Hinders the Performance of Defect Prediction Models,&#34; IEEE Transactions on Software Engineering, pp. 476-491</code></pre>
+        </div>
+
+    </div>
+
+
+
+        <ul class="nav justify-content-center credits pt-4 pb-3">
+            <li class="nav-item">
+                <h6>Designed and built by <a target="_blank" href="https://vishnus.me">Vishnu Satish</a></h6>
+            </li>
+        </ul>
+
+        
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1220">
+    <div id="copy-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Copied text.
+        </div>
+    </div>
+</div>
+
+        <script src="/dist/assets/js/bootstrap.min.js"></script>
+        <script src="/dist/assets/js/main.js"></script>
+
+    </body>
+
+</html>

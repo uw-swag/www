@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Toward Understanding Compiler Bugs in GCC and LLVM - SWAG Lab</title>
+        <link rel="stylesheet" href="/dist/assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+              crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/dist/assets/img/favicon.png"/>
+        
+
+    <link rel="stylesheet" href="/dist/assets/css/publications/specific.css">
+
+
+    </head>
+
+    <body>
+
+        
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 py-3 bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dist/"><img height="30" src="/dist/assets/img/SWAGLogoWhite.png" alt="SWAG Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/index.html">Home</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/members.html">Members</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/publications.html">Publications</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/teaching.html">Teaching</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/tools.html">Tools</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/funding-partners.html">Funding Partners</a>
+                        
+                    </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+
+        <h1 class="display-6">Toward Understanding Compiler Bugs in GCC and LLVM</h1>
+
+        
+        
+            <p class="fs-4"><b>Authors:</b>
+                
+                    
+                        <a href="/dist/members/chengnian-sun.html"><span class="badge bg-secondary text-dark">Chengnian Sun</span></a>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Vu Le</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Qirun Zhang</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Zhendong Su</span>
+                    
+                
+            </p>
+        
+
+        
+        <p class="fs-4"><b>Venue:</b>
+            
+            25th International Symposium on Software Testing and Analysis (ISSTA), pp. 294-305, 2016
+        </p>
+
+        
+            <p class="fs-4"><b>Year:</b>
+                <a href="/dist/years/2016.html"><span
+                        class="badge bg-secondary text-dark">2016</span></a>
+            </p>
+        
+
+        
+        
+
+        
+        
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Compilers are critical, widely-used complex software. Bugs in them have significant impact, and can cause serious damage when they silently miscompile a safety-critical application. An in-depth understanding of compiler bugs can help detect and fix them. To this end, we conduct the first empirical study on the characteristics of the bugs in two main-stream compilers, GCC and LLVM. Our study is significant in scale— it exhaustively examines about 50K bugs and 30K bug fix revisions over more than a decade’s span. This paper details our systematic study. Summary findings include: (1) In both compilers, C++ is the most buggy component, accounting for around 20% of the total bugs and twice as many as the second most buggy component; (2) the bug revealing test cases are typically small, with 80% having fewer than 45 lines of code; (3) most of the bug fixes touch a single source file with small modifications (43 lines for GCC and 38 for LLVM on average); (4) the average lifetime of GCC bugs is 200 days, and 111 days for LLVM; and (5) high priority tends to be assigned to optimizer bugs, most notably 30% of the bugs in GCC’s inter-procedural analysis component are labeled P1 (the highest priority). This study deepens our understanding of compiler bugs. For application developers, it shows that even mature production compilers still have many bugs, which may affect development. For researchers and compiler developers, it sheds light on interesting characteristics of compiler bugs, and highlights challenges and opportunities to more effectively test and debug compilers.</p>
+        
+
+        
+
+        
+        
+
+        <p class="fs-4"><b>BibTeX:</b></p>
+        <div class="copy-code">
+            <pre><code>@inproceedings{chengniansun2016tucbigal,
+    author = &#34;Chengnian Sun and Vu Le and Qirun Zhang and Zhendong Su&#34;,
+    title = &#34;Toward Understanding Compiler Bugs in GCC and LLVM&#34;,
+    year = &#34;2016&#34;,
+    pages = &#34;294-305&#34;,
+    booktitle = &#34;Proceedings of 25th International Symposium on Software Testing and Analysis (ISSTA)&#34;
+}
+</code></pre>
+        </div>
+        <p class="fs-4"><b>Plain Text:</b></p>
+        <div class="copy-code">
+            <pre><code>Chengnian Sun, Vu Le, Qirun Zhang, and Zhendong Su, &#34;Toward Understanding Compiler Bugs in GCC and LLVM,&#34; 25th International Symposium on Software Testing and Analysis (ISSTA), pp. 294-305</code></pre>
+        </div>
+
+    </div>
+
+
+
+        <ul class="nav justify-content-center credits pt-4 pb-3">
+            <li class="nav-item">
+                <h6>Designed and built by <a target="_blank" href="https://vishnus.me">Vishnu Satish</a></h6>
+            </li>
+        </ul>
+
+        
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1220">
+    <div id="copy-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Copied text.
+        </div>
+    </div>
+</div>
+
+        <script src="/dist/assets/js/bootstrap.min.js"></script>
+        <script src="/dist/assets/js/main.js"></script>
+
+    </body>
+
+</html>

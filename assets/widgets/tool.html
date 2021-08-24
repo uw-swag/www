@@ -1,0 +1,11 @@
+<div class="card card-hover mb-3">
+    <div class="card-body">
+        <h2 class="card-title"><a href="{{ tool.external_page_name.cdata }}">{{ tool.name.cdata }}</a></h2>
+        <div class="card-text">
+            {# If the publication's venue is given, then display it #}
+            {% if tool.description is not none %}
+                <p class="fs-5">{{ tool.description.cdata|safe }}</p>
+            {% endif %}
+        </div>
+    </div>
+</div>

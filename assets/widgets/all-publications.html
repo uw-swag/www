@@ -1,0 +1,69 @@
+<nav class="mt-3">
+    <div class="nav nav-pills">
+        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="pill" data-bs-target="#article-papers"
+                type="button">Journal Papers
+        </button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="pill" data-bs-target="#inproceedings-papers"
+                type="button">Conference Papers
+        </button>
+        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="pill" data-bs-target="#thesis-papers"
+                type="button">Theses
+        </button>
+    </div>
+</nav>
+
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="article-papers" role="tabpanel">
+        <h3 class="mt-3">Journal Papers</h3>
+
+        {% set journal_publications = publications|custom_filter('lambda x: x.type.cdata == "article"') %}
+
+        {% for publication in journal_publications|custom_sort('lambda x: x.years[0].urlsafe.cdata', reverse=True) %}
+
+            {% include 'assets/widgets/publication.html' %}
+
+        {% endfor %}
+
+        {% if journal_publications|length == 0 %}
+            <h6 class="mt-3">No journal papers were found.</h6>
+        {% endif %}
+
+    </div>
+
+    <div class="tab-pane fade" id="inproceedings-papers" role="tabpanel">
+        <h3 class="mt-3">Conference Papers</h3>
+
+        {% set conference_publications = publications|custom_filter('lambda x: x.type.cdata == "inproceedings"') %}
+
+        {% for publication in conference_publications|custom_sort('lambda x: x.years[0].urlsafe.cdata', reverse=True) %}
+
+            {% include 'assets/widgets/publication.html' %}
+
+        {% endfor %}
+
+        {% if conference_publications|length == 0 %}
+            <h6 class="mt-3">No conference papers were found.</h6>
+        {% endif %}
+
+    </div>
+
+    <div class="tab-pane fade" id="thesis-papers" role="tabpanel">
+        <h3 class="mt-3">Theses</h3>
+
+        {% set theses = publications|custom_filter('lambda x: x.type.cdata == "phdthesis" or x.type.cdata == "mastersthesis"') %}
+
+        {% for publication in theses|custom_sort('lambda x: x.years[0].urlsafe.cdata', reverse=True) %}
+
+            {% include 'assets/widgets/publication.html' %}
+
+        {% endfor %}
+
+        {% if theses|length == 0 %}
+            <h6 class="mt-3">No theses were found.</h6>
+        {% endif %}
+
+    </div>
+
+</div>
+
+

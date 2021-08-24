@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thresholds for size and complexity metrics: A case study from the perspective of defect density - SWAG Lab</title>
+        <link rel="stylesheet" href="/dist/assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+              crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/dist/assets/img/favicon.png"/>
+        
+
+    <link rel="stylesheet" href="/dist/assets/css/publications/specific.css">
+
+
+    </head>
+
+    <body>
+
+        
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 py-3 bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dist/"><img height="30" src="/dist/assets/img/SWAGLogoWhite.png" alt="SWAG Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/index.html">Home</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/members.html">Members</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/publications.html">Publications</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/teaching.html">Teaching</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/tools.html">Tools</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/funding-partners.html">Funding Partners</a>
+                        
+                    </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+
+        <h1 class="display-6">Thresholds for size and complexity metrics: A case study from the perspective of defect density</h1>
+
+        
+        
+            <p class="fs-4"><b>Authors:</b>
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Kazuhiro Yamashita</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Changyun Huang</span>
+                    
+                
+                    
+                        <a href="/dist/members/mei-nagappan.html"><span class="badge bg-secondary text-dark">Meiyappan Nagappan</span></a>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Yasutaka Kamei</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Audris Mockus</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Ahmed E. Hassan</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Naoyasu Ubayashi</span>
+                    
+                
+            </p>
+        
+
+        
+        <p class="fs-4"><b>Venue:</b>
+            
+            IEEE International Conference on Software Quality, Reliability and Security (QRS), pp. 191--201, 2016
+        </p>
+
+        
+            <p class="fs-4"><b>Year:</b>
+                <a href="/dist/years/2016.html"><span
+                        class="badge bg-secondary text-dark">2016</span></a>
+            </p>
+        
+
+        
+        
+
+        
+        
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Practical guidelines on what code has better quality are in great demand. For example, it is reasonable to expect the most complex code to be buggy. Structuring code into reasonably sized files and classes also appears to be prudent. Many attempts to determine (or declare) risk thresholds for various code metrics have been made. In this paper we want to examine the applicability of such thresholds. Hence, we replicate a recently published technique for calculating metric thresholds to determine high-risk files based on code size (LOC and number of methods), and complexity (cyclomatic complexity and module interface coupling) using a very large set of open and closed source projects written primarily in Java. We relate the threshold-derived risk to (a) the probability that a file would have a defect, and (b) the defect density of the files in the high-risk group. We find that the probability of a file having a defect is higher in the very high-risk group with a few exceptions. This is particularly pronounced when using size thresholds. Surprisingly, the defect density was uniformly lower in the very high-risk group of files. Our results suggest that, as expected, less code is associated with fewer defects. However, the same amount of code in large and complex files was associated with fewer defects than when located in smaller and less complex files. Hence we conclude that risk thresholds for size and complexity metrics have to be used with caution if at all. Our findings have immediate practical implications: the redistribution of Java code into smaller and less complex files may be counterproductive.</p>
+        
+
+        
+
+        
+        
+
+        <p class="fs-4"><b>BibTeX:</b></p>
+        <div class="copy-code">
+            <pre><code>@inproceedings{kazuhiroyamashita2016tfsacmacsftpodd,
+    author = &#34;Kazuhiro Yamashita and Changyun Huang and Meiyappan Nagappan and Yasutaka Kamei and Audris Mockus and Ahmed E. Hassan and Naoyasu Ubayashi&#34;,
+    title = &#34;Thresholds for size and complexity metrics: A case study from the perspective of defect density&#34;,
+    year = &#34;2016&#34;,
+    pages = &#34;191--201&#34;,
+    booktitle = &#34;2016 IEEE international conference on software quality, reliability and security (QRS)&#34;
+}
+</code></pre>
+        </div>
+        <p class="fs-4"><b>Plain Text:</b></p>
+        <div class="copy-code">
+            <pre><code>Kazuhiro Yamashita, Changyun Huang, Meiyappan Nagappan, Yasutaka Kamei, Audris Mockus, Ahmed E. Hassan, and Naoyasu Ubayashi, &#34;Thresholds for size and complexity metrics: A case study from the perspective of defect density,&#34; IEEE International Conference on Software Quality, Reliability and Security (QRS), pp. 191--201</code></pre>
+        </div>
+
+    </div>
+
+
+
+        <ul class="nav justify-content-center credits pt-4 pb-3">
+            <li class="nav-item">
+                <h6>Designed and built by <a target="_blank" href="https://vishnus.me">Vishnu Satish</a></h6>
+            </li>
+        </ul>
+
+        
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1220">
+    <div id="copy-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Copied text.
+        </div>
+    </div>
+</div>
+
+        <script src="/dist/assets/js/bootstrap.min.js"></script>
+        <script src="/dist/assets/js/main.js"></script>
+
+    </body>
+
+</html>

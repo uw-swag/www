@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mining Co-change Information to Understand When Build Changes Are Necessary - SWAG Lab</title>
+        <link rel="stylesheet" href="/dist/assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+              crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/dist/assets/img/favicon.png"/>
+        
+
+    <link rel="stylesheet" href="/dist/assets/css/publications/specific.css">
+
+
+    </head>
+
+    <body>
+
+        
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 py-3 bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dist/"><img height="30" src="/dist/assets/img/SWAGLogoWhite.png" alt="SWAG Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/index.html">Home</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/members.html">Members</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/publications.html">Publications</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/teaching.html">Teaching</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/tools.html">Tools</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/funding-partners.html">Funding Partners</a>
+                        
+                    </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+
+        <h1 class="display-6">Mining Co-change Information to Understand When Build Changes Are Necessary</h1>
+
+        
+        
+            <p class="fs-4"><b>Authors:</b>
+                
+                    
+                        <a href="/dist/members/shane-mcintosh.html"><span class="badge bg-secondary text-dark">Shane McIntosh</span></a>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Bram Adams</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Meiyappan Nagappan</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Ahmed E. Hassan</span>
+                    
+                
+            </p>
+        
+
+        
+        <p class="fs-4"><b>Venue:</b>
+            
+                <a href="/dist/venues/ICSME.html"><span class="badge bg-secondary text-dark">ICSME</span></a>
+                &nbsp;
+            
+            2014 IEEE International Conference on Software Maintenance and Evolution, pp. 241-250, 2014
+        </p>
+
+        
+            <p class="fs-4"><b>Year:</b>
+                <a href="/dist/years/2014.html"><span
+                        class="badge bg-secondary text-dark">2014</span></a>
+            </p>
+        
+
+        
+        
+
+        
+        
+            <p class="fs-4 lh-sm"><b>Abstract:</b> As a software project ages, its source code is modified to add new features, restructure existing ones, and fix defects. These source code changes often induce changes in the build system, i.e., the system that specifies how source code is translated into deliverables. However, since developers are often not familiar with the complex and occasionally archaic technologies used to specify build systems, they may not be able to identify when their source code changes require accompanying build system changes. This can cause build breakages that slow development progress and impact other developers, testers, or even users. In this paper, we mine the source and test code changes that required accompanying build changes in order to better understand this co-change relationship. We build random forest classifiers using language-agnostic and language-specific code change characteristics to explain when code-accompanying build changes are necessary based on historical trends. Case studies of the Mozilla C++ system, the Lucene and Eclipse open source Java systems, and the IBM Jazz proprietary Java system indicate that our classifiers can accurately explain when build co-changes are necessary with an AUC of 0.60-0.88. Unsurprisingly, our highly accurate C++ classifiers (AUC of 0.88) derive much of their explanatory power from indicators of structural change (e.g., was a new source file added?). On the other hand, our Java classifiers are less accurate (AUC of 0.60-0.78) because roughly 75% of Java build co-changes do not coincide with changes to the structure of a system, but rather are instigated by concerns related to release engineering, quality assurance, and general build maintenance.</p>
+        
+
+        
+
+        
+        
+
+        <p class="fs-4"><b>BibTeX:</b></p>
+        <div class="copy-code">
+            <pre><code>@inproceedings{shanemcintosh2014mcituwbcan,
+    author = &#34;Shane McIntosh and Bram Adams and Meiyappan Nagappan and Ahmed E. Hassan&#34;,
+    title = &#34;Mining Co-change Information to Understand When Build Changes Are Necessary&#34;,
+    year = &#34;2014&#34;,
+    pages = &#34;241-250&#34;,
+    booktitle = &#34;Proceedings of 2014 IEEE International Conference on Software Maintenance and Evolution&#34;
+}
+</code></pre>
+        </div>
+        <p class="fs-4"><b>Plain Text:</b></p>
+        <div class="copy-code">
+            <pre><code>Shane McIntosh, Bram Adams, Meiyappan Nagappan, and Ahmed E. Hassan, &#34;Mining Co-change Information to Understand When Build Changes Are Necessary,&#34; 2014 IEEE International Conference on Software Maintenance and Evolution, pp. 241-250</code></pre>
+        </div>
+
+    </div>
+
+
+
+        <ul class="nav justify-content-center credits pt-4 pb-3">
+            <li class="nav-item">
+                <h6>Designed and built by <a target="_blank" href="https://vishnus.me">Vishnu Satish</a></h6>
+            </li>
+        </ul>
+
+        
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1220">
+    <div id="copy-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Copied text.
+        </div>
+    </div>
+</div>
+
+        <script src="/dist/assets/js/bootstrap.min.js"></script>
+        <script src="/dist/assets/js/main.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,28 @@
+<div class="card card-hover mb-3">
+    <div class="card-body">
+        <h2 class="card-title"><a href="{{ PREFIX }}/teaching/{{ course.urlsafe.cdata }}.html">{{ course.name.cdata }}</a></h2>
+        <div class="card-text">
+            {# If the course's about is given, then display it #}
+            {% if course.description is not none %}
+                <h4><b>Course Description:</b> {{ course.description.cdata }}</h4>
+            {% endif %}
+
+            {# Show the semesters that the current member has taught the course #}
+            {% if show_semesters and course.semesters is not none %}
+                {% if course.semesters|custom_attr(get_safe_tag_name(data.urlsafe.cdata)) is not none %}
+                    <h4><b>Semesters Taught:</b> {{ (course.semesters|attr(get_safe_tag_name(data.urlsafe.cdata))).cdata|safe }}</h4>
+                {% endif %}
+            {% endif %}
+
+            {# If the course's members are defined, then show each member as a Bootstrap badge #}
+            {% if course.members is not none %}
+                <h4 class="lh-base"><b>Taught By:</b>
+                {% for member in course.members %}
+                <a href="{{ PREFIX }}/members/{{ member.urlsafe.cdata }}.html"><span class="badge bg-secondary text-dark">{{ member.name.cdata }}</span></a>
+                {% endfor %}
+                </h4>
+            {% endif %}
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cross-project build co-change prediction - SWAG Lab</title>
+        <link rel="stylesheet" href="/dist/assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+              crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/dist/assets/img/favicon.png"/>
+        
+
+    <link rel="stylesheet" href="/dist/assets/css/publications/specific.css">
+
+
+    </head>
+
+    <body>
+
+        
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 py-3 bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dist/"><img height="30" src="/dist/assets/img/SWAGLogoWhite.png" alt="SWAG Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/index.html">Home</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/members.html">Members</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/publications.html">Publications</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/teaching.html">Teaching</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/tools.html">Tools</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/funding-partners.html">Funding Partners</a>
+                        
+                    </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+
+        <h1 class="display-6">Cross-project build co-change prediction</h1>
+
+        
+        
+            <p class="fs-4"><b>Authors:</b>
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Xin Xia</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">David Lo</span>
+                    
+                
+                    
+                        <a href="/dist/members/shane-mcintosh.html"><span class="badge bg-secondary text-dark">Shane McIntosh</span></a>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Emad Shihab</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Ahmed E. Hassan</span>
+                    
+                
+            </p>
+        
+
+        
+        <p class="fs-4"><b>Venue:</b>
+            
+                <a href="/dist/venues/SANER.html"><span class="badge bg-secondary text-dark">SANER</span></a>
+                &nbsp;
+            
+            2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER), pp. 311-320, 2015
+        </p>
+
+        
+            <p class="fs-4"><b>Year:</b>
+                <a href="/dist/years/2015.html"><span
+                        class="badge bg-secondary text-dark">2015</span></a>
+            </p>
+        
+
+        
+        
+
+        
+        
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Build systems orchestrate how human-readable source code is translated into executable programs. In a software project, source code changes can induce changes in the build system (aka. build co-changes). It is difficult for developers to identify when build co-changes are necessary due to the complexity of build systems. Prediction of build co-changes works well if there is a sufficient amount of training data to build a model. However, in practice, for new projects, there exists a limited number of changes. Using training data from other projects to predict the build co-changes in a new project can help improve the performance of the build co-change prediction. We refer to this problem as cross-project build co-change prediction. In this paper, we propose CroBuild, a novel cross-project build co-change prediction approach that iteratively learns new classifiers. CroBuild constructs an ensemble of classifiers by iteratively building classifiers and assigning them weights according to its prediction error rate. Given that only a small proportion of code changes are build co-changing, we also propose an imbalance-aware approach that learns a threshold boundary between those code changes that are build co-changing and those that are not in order to construct classifiers in each iteration. To examine the benefits of CroBuild, we perform experiments on 4 large datasets including Mozilla, Eclipse-core, Lucene, and Jazz, comprising a total of 50,884 changes. On average, across the 4 datasets, CroBuild achieves a F1-score of up to 0.408. We also compare CroBuild with other approaches such as a basic model, AdaBoost proposed by Freund et al., and TrAdaBoost proposed by Dai et al.. On average, across the 4 datasets, the CroBuild approach yields an improvement in F1-scores of 41.54%, 36.63%, and 36.97% over the basic model, AdaBoost, and TrAdaBoost, respectively.</p>
+        
+
+        
+
+        
+        
+
+        <p class="fs-4"><b>BibTeX:</b></p>
+        <div class="copy-code">
+            <pre><code>@inproceedings{xinxia2015cbcp,
+    author = &#34;Xin Xia and David Lo and Shane McIntosh and Emad Shihab and Ahmed E. Hassan&#34;,
+    title = &#34;Cross-project build co-change prediction&#34;,
+    year = &#34;2015&#34;,
+    pages = &#34;311-320&#34;,
+    booktitle = &#34;Proceedings of 2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER)&#34;
+}
+</code></pre>
+        </div>
+        <p class="fs-4"><b>Plain Text:</b></p>
+        <div class="copy-code">
+            <pre><code>Xin Xia, David Lo, Shane McIntosh, Emad Shihab, and Ahmed E. Hassan, &#34;Cross-project build co-change prediction,&#34; 2015 IEEE 22nd International Conference on Software Analysis, Evolution, and Reengineering (SANER), pp. 311-320</code></pre>
+        </div>
+
+    </div>
+
+
+
+        <ul class="nav justify-content-center credits pt-4 pb-3">
+            <li class="nav-item">
+                <h6>Designed and built by <a target="_blank" href="https://vishnus.me">Vishnu Satish</a></h6>
+            </li>
+        </ul>
+
+        
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1220">
+    <div id="copy-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Copied text.
+        </div>
+    </div>
+</div>
+
+        <script src="/dist/assets/js/bootstrap.min.js"></script>
+        <script src="/dist/assets/js/main.js"></script>
+
+    </body>
+
+</html>

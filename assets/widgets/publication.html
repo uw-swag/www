@@ -1,0 +1,79 @@
+<div class="card card-hover mb-3">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-10">
+                <h2 class="card-title"><a href="{{ PREFIX }}/publications/{{ publication.urlsafe.cdata }}.html">{{ publication.title.cdata }}</a></h2>
+                <div class="card-text">
+
+                    {# If the publication's authors are defined, then show each author as a Bootstrap badge #}
+                    {% if publication.authors is not none or publication.authors_not_in_swag is not none %}
+                        <h4 class="lh-base"><b>Authors:</b>
+                        {% for author, in_swag in utils.get_publication_authors(publication) %}
+                            {% if in_swag %}
+                                <a href="{{ PREFIX }}/members/{{ author.urlsafe.cdata }}.html"><span class="badge bg-secondary text-dark">{{ author.publication_name.cdata }}</span></a>
+                            {% else %}
+                                <span class="badge bg-secondary text-dark non-clickable-user">{{ author.cdata }}</span>
+                            {% endif %}
+                        {% endfor %}
+                        </h4>
+                    {% endif %}
+        
+                    {# Display the publication's venue #}
+                    <h4><b>Venue:</b>
+                        {% if publication.venues is not none %}
+                            <a href="{{ PREFIX }}/venues/{{ publication.venues[0].urlsafe.cdata }}.html"><span class="badge bg-secondary text-dark">{{ publication.venues[0].acronym.cdata }}</span></a>
+                            &nbsp;
+                        {% endif %}
+                        {{ utils.get_venue(publication) }}
+                    </h4>
+        
+                    {# If the publication's preprint is given, then display the link #}
+                    {% if publication.preprint is not none %}
+                        <h4><b>Preprint:</b> <a target="_blank" href="{{ PREFIX }}{{ publication.preprint.cdata }}">PDF</a></h4>
+                    {% endif %}
+        
+                    {# If the publication's tags are defined, then show each tag as a Bootstrap badge #}
+                    {% if publication.tags is not none %}
+                        <h4><b>Tags:</b>
+                        {% for tag in publication.tags %}
+                        <a href="{{ PREFIX }}/tags/{{ tag.urlsafe.cdata }}.html"><span class="badge bg-secondary text-dark">{{ tag.name.cdata }}</span></a>
+                        {% endfor %}
+                        </h4>
+                    {% endif %}
+
+                    {# If the publication's year are defined, then show the year as a Bootstrap badge #}
+                    {% if publication.years is not none %}
+                        <h4><b>Year:</b> <a href="{{ PREFIX }}/years/{{ publication.years[0].urlsafe.cdata }}.html"><span class="badge bg-secondary text-dark">{{ publication.years[0].urlsafe.cdata }}</span></a> </h4>
+                    {% endif %}
+
+                </div>
+            </div>
+            <div class="col text-end">
+                <button data-bs-toggle="modal" data-bs-target="#cite-modal-{{ publication.urlsafe.cdata }}" class="btn btn-primary">Cite</button>
+            </div>
+          </div>
+
+    </div>
+</div>
+
+<div class="modal fade" id="cite-modal-{{ publication.urlsafe.cdata }}" tabindex="-1"
+    aria-labelledby="cite-modal-label-{{ publication.urlsafe.cdata }}" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="cite-modal-label-{{ publication.urlsafe.cdata }}">Cite "{{ publication.title.cdata|truncate(50) }}"</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h5>BibTeX</h5>
+                <div class="copy-code"><pre><code>{{ utils.get_bibtex(publication) }}</code></pre></div>
+                <h5>Plain Text</h5>
+                <div class="copy-code"><pre><code>{{ utils.get_plain_citation(publication) }}</code></pre></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+  

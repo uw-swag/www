@@ -1,0 +1,10 @@
+.badge:not(.non-clickable-user) {
+  transition: 0.07s;
+}
+
+.badge:not(.non-clickable-user):hover {
+  background-color: #820a26 !important;
+  color: white !important;
+}
+
+/*# sourceMappingURL=specific.css.map */

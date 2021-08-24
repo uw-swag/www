@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BLIMP Tracer: Integrating Build Impact Analysis with Code Review - SWAG Lab</title>
+        <link rel="stylesheet" href="/dist/assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+              crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/dist/assets/img/favicon.png"/>
+        
+
+    <link rel="stylesheet" href="/dist/assets/css/publications/specific.css">
+
+
+    </head>
+
+    <body>
+
+        
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 py-3 bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dist/"><img height="30" src="/dist/assets/img/SWAGLogoWhite.png" alt="SWAG Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/index.html">Home</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/members.html">Members</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/publications.html">Publications</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/teaching.html">Teaching</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/tools.html">Tools</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/funding-partners.html">Funding Partners</a>
+                        
+                    </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+
+        <h1 class="display-6">BLIMP Tracer: Integrating Build Impact Analysis with Code Review</h1>
+
+        
+        
+            <p class="fs-4"><b>Authors:</b>
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Ruiyin Wen</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">David Gilbert</span>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Michael G. Roche</span>
+                    
+                
+                    
+                        <a href="/dist/members/shane-mcintosh.html"><span class="badge bg-secondary text-dark">Shane McIntosh</span></a>
+                    
+                
+            </p>
+        
+
+        
+        <p class="fs-4"><b>Venue:</b>
+            
+                <a href="/dist/venues/ICSME.html"><span class="badge bg-secondary text-dark">ICSME</span></a>
+                &nbsp;
+            
+            2018 IEEE International Conference on Software Maintenance and Evolution (ICSME), pp. 685-694, 2018
+        </p>
+
+        
+            <p class="fs-4"><b>Year:</b>
+                <a href="/dist/years/2018.html"><span
+                        class="badge bg-secondary text-dark">2018</span></a>
+            </p>
+        
+
+        
+        
+
+        
+        
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Code review is an integral part of modern software development, where patch authors invite fellow developers to inspect code changes. While code review boasts technical and non-technical benefits, it is a costly use of developer time, who need to switch contexts away from their current development tasks. Since a careful code review requires even more time, developers often make intuition-based decisions about the patches that they will invest effort in carefully reviewing. Our key intuition in this paper is that patches that impact mission-critical project deliverables or deliverables that cover a broad set of products may require more reviewing effort than others. To help developers identify such patches, we introduce BLIMP Tracer, a build impact analysis system that we developed and integrated with the code review platform used by a globally distributed product team at Dell EMC, a large multinational corporation. BLIMP Tracer operates on a Build Dependency Graph (BDG) that describes how each file in the system is processed to produce the set of intermediate and output deliverables. For a given patch, BLIMP Tracer then traverses the BDG to identify the deliverables that are impacted by the change. Finally, the results are reported directly within the code review interface. To evaluate BLIMP Tracer, we conducted a qualitative study with 45 developers, observing that BLIMP Tracer not only improves the speed and accuracy of identifying the set of deliverables that are impacted by a patch, but also helps the community to better understand the project architecture.</p>
+        
+
+        
+
+        
+        
+
+        <p class="fs-4"><b>BibTeX:</b></p>
+        <div class="copy-code">
+            <pre><code>@inproceedings{ruiyinwen2018btibiawcr,
+    author = &#34;Ruiyin Wen and David Gilbert and Michael G. Roche and Shane McIntosh&#34;,
+    title = &#34;BLIMP Tracer: Integrating Build Impact Analysis with Code Review&#34;,
+    year = &#34;2018&#34;,
+    pages = &#34;685-694&#34;,
+    booktitle = &#34;Proceedings of 2018 IEEE International Conference on Software Maintenance and Evolution (ICSME)&#34;
+}
+</code></pre>
+        </div>
+        <p class="fs-4"><b>Plain Text:</b></p>
+        <div class="copy-code">
+            <pre><code>Ruiyin Wen, David Gilbert, Michael G. Roche, and Shane McIntosh, &#34;BLIMP Tracer: Integrating Build Impact Analysis with Code Review,&#34; 2018 IEEE International Conference on Software Maintenance and Evolution (ICSME), pp. 685-694</code></pre>
+        </div>
+
+    </div>
+
+
+
+        <ul class="nav justify-content-center credits pt-4 pb-3">
+            <li class="nav-item">
+                <h6>Designed and built by <a target="_blank" href="https://vishnus.me">Vishnu Satish</a></h6>
+            </li>
+        </ul>
+
+        
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1220">
+    <div id="copy-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Copied text.
+        </div>
+    </div>
+</div>
+
+        <script src="/dist/assets/js/bootstrap.min.js"></script>
+        <script src="/dist/assets/js/main.js"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Skeletal program enumeration for rigorous compiler testing - SWAG Lab</title>
+        <link rel="stylesheet" href="/dist/assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+              crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/dist/assets/img/favicon.png"/>
+        
+
+    <link rel="stylesheet" href="/dist/assets/css/publications/specific.css">
+
+
+    </head>
+
+    <body>
+
+        
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 py-3 bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/dist/"><img height="30" src="/dist/assets/img/SWAGLogoWhite.png" alt="SWAG Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/index.html">Home</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/members.html">Members</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/publications.html">Publications</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/teaching.html">Teaching</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/tools.html">Tools</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/dist/funding-partners.html">Funding Partners</a>
+                        
+                    </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+
+        <h1 class="display-6">Skeletal program enumeration for rigorous compiler testing</h1>
+
+        
+        
+            <p class="fs-4"><b>Authors:</b>
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Qirun Zhang</span>
+                    
+                
+                    
+                        <a href="/dist/members/chengnian-sun.html"><span class="badge bg-secondary text-dark">Chengnian Sun</span></a>
+                    
+                
+                    
+                        <span class="badge bg-secondary text-dark non-clickable-user">Zhendong Su</span>
+                    
+                
+            </p>
+        
+
+        
+        <p class="fs-4"><b>Venue:</b>
+            
+            38th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), pp. 347–361, 2017
+        </p>
+
+        
+            <p class="fs-4"><b>Year:</b>
+                <a href="/dist/years/2017.html"><span
+                        class="badge bg-secondary text-dark">2017</span></a>
+            </p>
+        
+
+        
+        
+
+        
+        
+            <p class="fs-4 lh-sm"><b>Abstract:</b> A program can be viewed as a syntactic structure P (syntactic skeleton) parameterized by a collection of the identifiers V (variable names). This paper introduces the skeletal program enumeration (SPE) problem: Given a fixed syntactic skeleton P and a set of variables V , enumerate a set of programs P exhibiting all possible variable usage patterns within P. It proposes an effective realization of SPE for systematic, rigorous compiler testing by leveraging three important observations: (1) Programs with different variable usage patterns exhibit diverse control- and data-dependence information, and help exploit different compiler optimizations and stress-test compilers; (2) most real compiler bugs were revealed by small tests (i.e., small-sized P) --- this "small-scope" observation opens up SPE for practical compiler validation; and (3) SPE is exhaustive w.r.t. a given syntactic skeleton and variable set, and thus can offer a level of guarantee that is absent from all existing compiler testing techniques. The key challenge of SPE is how to eliminate the enormous amount of equivalent programs w.r.t.α-conversion. Our main technical contribution is a novel algorithm for computing the canonical (and smallest) set of all non-α-equivalent programs. We have realized our SPE technique and evaluated it using syntactic skeletons derived from GCC's testsuite. Our evaluation results on testing GCC and Clang are extremely promising. In less than six months, our approach has led to 217 confirmed bug reports, 104 of which have already been fixed, and the majority are long latent bugs despite the extensive prior efforts of automatically testing both compilers (e.g., Csmith and EMI). The results also show that our algorithm for enumerating non-α-equivalent programs provides six orders of magnitude reduction, enabling processing the GCC test-suite in under a month.</p>
+        
+
+        
+
+        
+        
+
+        <p class="fs-4"><b>BibTeX:</b></p>
+        <div class="copy-code">
+            <pre><code>@inproceedings{qirunzhang2017spefrct,
+    author = &#34;Qirun Zhang and Chengnian Sun and Zhendong Su&#34;,
+    title = &#34;Skeletal program enumeration for rigorous compiler testing&#34;,
+    year = &#34;2017&#34;,
+    pages = &#34;347–361&#34;,
+    booktitle = &#34;Proceedings of 38th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)&#34;
+}
+</code></pre>
+        </div>
+        <p class="fs-4"><b>Plain Text:</b></p>
+        <div class="copy-code">
+            <pre><code>Qirun Zhang, Chengnian Sun, and Zhendong Su, &#34;Skeletal program enumeration for rigorous compiler testing,&#34; 38th ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), pp. 347–361</code></pre>
+        </div>
+
+    </div>
+
+
+
+        <ul class="nav justify-content-center credits pt-4 pb-3">
+            <li class="nav-item">
+                <h6>Designed and built by <a target="_blank" href="https://vishnus.me">Vishnu Satish</a></h6>
+            </li>
+        </ul>
+
+        
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1220">
+    <div id="copy-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Copied text.
+        </div>
+    </div>
+</div>
+
+        <script src="/dist/assets/js/bootstrap.min.js"></script>
+        <script src="/dist/assets/js/main.js"></script>
+
+    </body>
+
+</html>

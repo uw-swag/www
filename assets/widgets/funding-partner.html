@@ -1,0 +1,30 @@
+<div class="card card-hover mb-3">
+    <div class="card-body">
+        {% if funding_partner.logo is not none %}
+        <img class="img-fluid m-3 w-25 funding-partner-logo" src="{{ PREFIX }}{{ funding_partner.logo.cdata }}" alt="{{ funding_partner.sponsor.cdata }}'s logo">
+        {% endif %}
+        <h2 class="card-title">{{ funding_partner.sponsor.cdata }}</h2>
+        <p class="card-text">
+            {# If the funding partner's members are defined, then show each member as a Bootstrap badge #}
+            {% if funding_partner.members is not none %}
+                <h4 class="lh-base"><b>Beneficiaries:</b>
+                {% for member in funding_partner.members %}
+                <a href="{{ PREFIX }}/members/{{ member.urlsafe.cdata }}.html"><span class="badge bg-secondary text-dark">{{ member.name.cdata }}</span></a>
+                {% endfor %}
+                </h4>
+            {% endif %}
+
+            {# if the funding partner's "from" date is defined, then display it #}
+            {% if funding_partner.from_date is not none %}
+                <h4><b>From:</b> {{ funding_partner.from_date.cdata }}</h4>
+            {% endif %}
+
+
+            {# if the funding partner's "to" date is defined, then display it #}
+            {% if funding_partner.to_date is not none %}
+                <h4><b>To:</b> {{ funding_partner.to_date.cdata }}</h4>
+            {% endif %}
+
+        </p>
+    </div>
+</div>
