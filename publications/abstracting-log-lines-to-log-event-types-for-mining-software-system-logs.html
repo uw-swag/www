@@ -120,7 +120,23 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> Log files contain valuable information about the execution of a system. This information is often used for debugging, operational profiling, finding anomalies, detecting security threats, measuring performance etc. The log files are usually too big for extracting this valuable information manually, even though manual perusal is still one of the more widely used techniques. Recently a variety of data mining and machine learning algorithms are being used to analyze the information in the log files. A major road block for the efficient use of these algorithms is the inherent variability present in every log line of a log file. Each log line is a combination of a static message type field and a variable parameter field. Even though both these fields are required, the analyses algorithm often requires that these be separated out, in order to find correlations in the repeating log event types. This disentangling of the message and parameter fields to find the event types is called abstraction of log lines. Each log line is abstracted to a unique ID or event type and the dynamic parameter value is extracted to give an insight on the current state of the system. In this paper we present a technique based on a clustering technique used in the Simple Log file Clustering Tool for log file abstraction. This solution is especially useful when we don't have access to the source code of the application or when the lines in the log file do not conform to a rigid structure. We evaluated our implementation on log files from the Virtual Computing Lab, a cloud computer management system at North Carolina State University, and abstracted it to 727 unique event types.</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Log files contain valuable information about the execution of a system. This information is often used
+            for debugging, operational profiling, finding anomalies, detecting security threats, measuring performance
+            etc. The log files are usually too big for extracting this valuable information manually, even though manual
+            perusal is still one of the more widely used techniques. Recently a variety of data mining and machine
+            learning algorithms are being used to analyze the information in the log files. A major road block for the
+            efficient use of these algorithms is the inherent variability present in every log line of a log file. Each
+            log line is a combination of a static message type field and a variable parameter field. Even though both
+            these fields are required, the analyses algorithm often requires that these be separated out, in order to
+            find correlations in the repeating log event types. This disentangling of the message and parameter fields
+            to find the event types is called abstraction of log lines. Each log line is abstracted to a unique ID or
+            event type and the dynamic parameter value is extracted to give an insight on the current state of the
+            system. In this paper we present a technique based on a clustering technique used in the Simple Log file
+            Clustering Tool for log file abstraction. This solution is especially useful when we don't have access to
+            the source code of the application or when the lines in the log file do not conform to a rigid structure. We
+            evaluated our implementation on log files from the Virtual Computing Lab, a cloud computer management system
+            at North Carolina State University, and abstracted it to 727 unique event types.
+        </p>
         
 
         

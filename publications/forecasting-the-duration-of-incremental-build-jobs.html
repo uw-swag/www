@@ -124,7 +124,21 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> Build systems automate the process of compiling, testing, packaging, and deploying modern software systems. While building a simple program may only take a few seconds on most modern computers, it may take hours, if not days, to build large software systems. Since modern build tools do not provide estimates of how long a build job will take, development and release teams cannot plan human and computer resources optimally. To fill this gap, we propose BuildMétéo-a tool to forecast the duration of incremental build jobs. BuildMétéo analyzes a timing-annotated Build Dependency Graph (BDG) that we extract from the build system to forecast build job duration. We evaluate BuildMétéo by comparing forecasts to the timed execution of 2,163 incremental build jobs derived from replayed commits of the GLIB and VTK open source systems.We find that: (a) 87% of the studied commits do not change the BDG, suggesting that reasoning about build job duration using the BDG is a sensible starting point; (b) 94% of incremental build jobs that do not change the BDG have an estimation error of under ten seconds; and (c) build jobs with larger sets of modified files tend to yield more accurate duration forecasts. These results suggest that BuildMétéo can improve the transparency of build jobs, and thus, aid practitioners in build-related decision making.</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Build systems automate the process of compiling, testing, packaging, and deploying modern software
+            systems. While building a simple program may only take a few seconds on most modern computers, it may take
+            hours, if not days, to build large software systems. Since modern build tools do not provide estimates of
+            how long a build job will take, development and release teams cannot plan human and computer resources
+            optimally. To fill this gap, we propose BuildMétéo-a tool to forecast the duration of incremental
+            build jobs. BuildMétéo analyzes a timing-annotated Build Dependency Graph (BDG) that we extract
+            from the build system to forecast build job duration. We evaluate BuildMétéo by comparing
+            forecasts to the timed execution of 2,163 incremental build jobs derived from replayed commits of the GLIB
+            and VTK open source systems.We find that: (a) 87% of the studied commits do not change the BDG, suggesting
+            that reasoning about build job duration using the BDG is a sensible starting point; (b) 94% of incremental
+            build jobs that do not change the BDG have an estimation error of under ten seconds; and (c) build jobs with
+            larger sets of modified files tend to yield more accurate duration forecasts. These results suggest that
+            BuildMétéo can improve the transparency of build jobs, and thus, aid practitioners in
+            build-related decision making.
+        </p>
         
 
         
@@ -139,7 +153,8 @@
     title = &#34;Forecasting the Duration of Incremental Build Jobs&#34;,
     year = &#34;2017&#34;,
     pages = &#34;524-528&#34;,
-    booktitle = &#34;Proceedings of 2017 IEEE International Conference on Software Maintenance and Evolution (ICSME)&#34;
+    booktitle = &#34;Proceedings of 2017 IEEE International Conference on Software Maintenance and Evolution (ICSME)
+        &#34;
 }
 </code></pre>
         </div>

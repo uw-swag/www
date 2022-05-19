@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Accelerating Continuous Integration by Caching Environments and Inferring Dependencies - SWAG Lab</title>
+        <title>Accelerating Continuous Integration by Caching Environments and Inferring Dependencies
+         - SWAG Lab</title>
         <link rel="stylesheet" href="/www/assets/css/main.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
               integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
@@ -128,7 +129,28 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> To facilitate the rapid release cadence of modern software (on the order of weeks, days, or even hours), software development organizations invest in practices like Continuous Integration (CI), where each change submitted by developers is built (e.g., compiled, tested, linted) to detect problematic changes early. A fast and efficient build process is crucial to provide timely CI feedback to developers. If CI feedback is too slow, developers may switch contexts to other tasks, which is known to be a costly operation for knowledge workers. Thus, minimizing the build execution time for CI services is an important task. While recent work has made several important advances in the acceleration of CI builds, optimizations often depend upon explicitly defined build dependency graphs (e.g., make, Gradle, CloudBuild, Bazel). These hand-maintained graphs may be (a) underspecified, leading to incorrect build behaviour; or (b) overspecified, leading to missed acceleration opportunities. In this paper, we propose Kotinos'a language-agnostic approach to infer data from which build acceleration decisions can be made without relying upon build specifications. After inferring this data, our approach accelerates CI builds by caching the build environment and skipping unaffected build steps. Kotinos is at the core of a commercial CI service with a growing customer base. To evaluate Kotinos, we mine 14,364 historical CI build records spanning three proprietary and seven open-source software projects. We find that: (1) at least 87.9% of the builds activate at least one Kotinos acceleration; and (2) 74% of accelerated builds achieve a speed-up of two-fold with respect to their non-accelerated counterparts. Moreover, (3) the benefits of Kotinos can also be replicated in open source software systems; and (4) Kotinos imposes minimal resource overhead (i.e.,&lt; 1% median CPU usage, 2 MB - 2.2 GB median memory usage, and 0.4 GB - 5.2 GB median storage overhead) and does not compromise build outcomes. Our results suggest that migration to Kotinos yields substantial benefits with minimal investment of effort (e.g., no migration of build systems is necessary).</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> To facilitate the rapid release cadence of modern software (on the order of weeks, days, or even
+            hours), software development organizations invest in practices like Continuous Integration (CI), where each
+            change submitted by developers is built (e.g., compiled, tested, linted) to detect problematic changes
+            early. A fast and efficient build process is crucial to provide timely CI feedback to developers. If CI
+            feedback is too slow, developers may switch contexts to other tasks, which is known to be a costly operation
+            for knowledge workers. Thus, minimizing the build execution time for CI services is an important task. While
+            recent work has made several important advances in the acceleration of CI builds, optimizations often depend
+            upon explicitly defined build dependency graphs (e.g., make, Gradle, CloudBuild, Bazel). These
+            hand-maintained graphs may be (a) underspecified, leading to incorrect build behaviour; or (b)
+            overspecified, leading to missed acceleration opportunities. In this paper, we propose Kotinos'a
+            language-agnostic approach to infer data from which build acceleration decisions can be made without relying
+            upon build specifications. After inferring this data, our approach accelerates CI builds by caching the
+            build environment and skipping unaffected build steps. Kotinos is at the core of a commercial CI service
+            with a growing customer base. To evaluate Kotinos, we mine 14,364 historical CI build records spanning three
+            proprietary and seven open-source software projects. We find that: (1) at least 87.9% of the builds activate
+            at least one Kotinos acceleration; and (2) 74% of accelerated builds achieve a speed-up of two-fold with
+            respect to their non-accelerated counterparts. Moreover, (3) the benefits of Kotinos can also be replicated
+            in open source software systems; and (4) Kotinos imposes minimal resource overhead (i.e., &lt; 1% median
+            CPU usage, 2 MB - 2.2 GB median memory usage, and 0.4 GB - 5.2 GB median storage overhead) and does not
+            compromise build outcomes. Our results suggest that migration to Kotinos yields substantial benefits with
+            minimal investment of effort (e.g., no migration of build systems is necessary).
+        </p>
         
 
         

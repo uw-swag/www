@@ -141,7 +141,20 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> State-of-the-art fuzzers implement various optimizations to enhance their performance. As the optimizations reside in different stages such as input seed selection and mutation, it is tempting to combine the optimizations in different stages. However, our initial attempts demonstrate that naive combination actually worsens the performance, which explains that most optimizations are still isolated by stages and metrics. In this paper, we present InteFuzz, the first framework that synergically integrates multiple fuzzing optimizations. We analyze the root cause for performance degradation in naive combination, and discover optimizations conflict in coverage criteria and optimization granularity. To resolve the conflicts, we propose a novel priority-based scheduling mechanism. The dynamic integration considers both branch-based and block-based coverage feedbacks that are used by most fuzzing optimizations. In our evaluation, we extract four optimizations from popular fuzzers such as AFLFast and FairFuzz and compare InteFuzz against naive combinations. The evaluation results show that InteFuzz outperforms the naive combination by 29% and 26% in path-and branch-coverage. Additionally, InteFuzz triggers 222 more unique crashes, and discovers 33 zero-day vulnerabilities in real-world projects with 12 registered as CVEs.</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> State-of-the-art fuzzers implement various optimizations to enhance their performance. As the
+            optimizations reside in different stages such as input seed selection and mutation, it is tempting to
+            combine the optimizations in different stages. However, our initial attempts demonstrate that naive
+            combination actually worsens the performance, which explains that most optimizations are still isolated by
+            stages and metrics. In this paper, we present InteFuzz, the first framework that synergically integrates
+            multiple fuzzing optimizations. We analyze the root cause for performance degradation in naive combination,
+            and discover optimizations conflict in coverage criteria and optimization granularity. To resolve the
+            conflicts, we propose a novel priority-based scheduling mechanism. The dynamic integration considers both
+            branch-based and block-based coverage feedbacks that are used by most fuzzing optimizations. In our
+            evaluation, we extract four optimizations from popular fuzzers such as AFLFast and FairFuzz and compare
+            InteFuzz against naive combinations. The evaluation results show that InteFuzz outperforms the naive
+            combination by 29% and 26% in path-and branch-coverage. Additionally, InteFuzz triggers 222 more unique
+            crashes, and discovers 33 zero-day vulnerabilities in real-world projects with 12 registered as CVEs.
+        </p>
         
 
         
@@ -156,7 +169,8 @@
     title = &#34;Engineering a Better Fuzzer with Synergically Integrated Optimizations&#34;,
     year = &#34;2019&#34;,
     pages = &#34;82-92&#34;,
-    booktitle = &#34;Proceedings of 2019 IEEE 30th International Symposium on Software Reliability Engineering (ISSRE)&#34;
+    booktitle = &#34;Proceedings of 2019 IEEE 30th International Symposium on Software Reliability Engineering (ISSRE)
+        &#34;
 }
 </code></pre>
         </div>

@@ -124,7 +124,25 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> Code coverage measures the degree to which source code elements (e.g., statements, branches) are invoked during testing. Despite growing evidence that coverage is a problematic measurement, it is often used to make decisions about where testing effort should be invested. For example, using coverage as a guide, tests should be written to invoke the non-covered program elements. At their core, coverage measurements assume that invocation of a program element during any test is equally valuable. Yet in reality, some tests are more robust than others. As a concrete instance of this, we posit in this paper that program elements that are only covered by flaky tests, i.e., tests with non-deterministic behaviour, are also worthy of investment of additional testing effort. In this paper, we set out to quantify, characterize, and mitigate "flakily covered" program elements (i.e., those elements that are only covered by flaky tests). To that end, we perform an empirical study of three large software systems from the OpenStack community. In terms of quantification, we find that systems are disproportionately impacted by flakily covered statements with 5% and 10% of the covered statements in Nova and Neutron being flakily covered, respectively, while&lt; 1% of Cinder statements are flakily covered. In terms of characterization, we find that incidences of flakily covered statements could not be well explained by solely using code characteristics, such as dispersion, ownership, and development activity. In terms of mitigation, we propose GreedyFlake - a test effort prioritization algorithm to maximize return on investment when tackling the problem of flakily covered program elements. We find that GreedyFlake outperforms baseline approaches by at least eight percentage points of Area Under the Cost Effectiveness Curve.</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Code coverage measures the degree to which source code elements (e.g., statements, branches) are
+            invoked during testing. Despite growing evidence that coverage is a problematic measurement, it is often
+            used to make decisions about where testing effort should be invested. For example, using coverage as a
+            guide, tests should be written to invoke the non-covered program elements. At their core, coverage
+            measurements assume that invocation of a program element during any test is equally valuable. Yet in
+            reality, some tests are more robust than others. As a concrete instance of this, we posit in this paper that
+            program elements that are only covered by flaky tests, i.e., tests with non-deterministic behaviour, are
+            also worthy of investment of additional testing effort. In this paper, we set out to quantify, characterize,
+            and mitigate "flakily covered" program elements (i.e., those elements that are only covered by flaky tests).
+            To that end, we perform an empirical study of three large software systems from the OpenStack community. In
+            terms of quantification, we find that systems are disproportionately impacted by flakily covered statements
+            with 5% and 10% of the covered statements in Nova and Neutron being flakily covered, respectively, while
+            &lt; 1% of Cinder statements are flakily covered. In terms of characterization, we find that incidences
+            of flakily covered statements could not be well explained by solely using code characteristics, such as
+            dispersion, ownership, and development activity. In terms of mitigation, we propose GreedyFlake - a test
+            effort prioritization algorithm to maximize return on investment when tackling the problem of flakily
+            covered program elements. We find that GreedyFlake outperforms baseline approaches by at least eight
+            percentage points of Area Under the Cost Effectiveness Curve.
+        </p>
         
 
         

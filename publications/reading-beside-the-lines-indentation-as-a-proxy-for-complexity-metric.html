@@ -121,7 +121,20 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> Maintainers face the daunting task of wading through a collection of both new and old revisions, trying to ferret out revisions which warrant personal inspection. One can rank revisions by size/lines of code (LOC), but often, due to the distribution of the size of changes, revisions will be of similar size. If we can't rank revisions by LOC perhaps we can rank by Halstead's and McCabe's complexity metrics? However, these metrics are problematic when applied to code fragments (revisions) written in multiple languages: special parsers are required which may not support the language or dialect used; analysis tools may not understand code fragments. We propose using the statistical moments of indentation as a lightweight, language independent, revision/diff friendly metric which actually proxies classical complexity metrics. We have extensively evaluated our approach against the entire CVS histories of the 278 of the most popular and most active SourceForge projects. We found that our results are linearly correlated and rank-correlated with traditional measures of complexity, suggesting that measuring indentation is a cheap and accurate proxy for code complexity of revisions. Thus ranking revisions by the standard deviation and summation of indentation will be very similar to ranking revisions by complexity.</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Maintainers face the daunting task of wading through a collection of both new and old revisions,
+            trying to ferret out revisions which warrant personal inspection. One can rank revisions by size/lines of
+            code (LOC), but often, due to the distribution of the size of changes, revisions will be of similar size. If
+            we can't rank revisions by LOC perhaps we can rank by Halstead's and McCabe's complexity metrics? However,
+            these metrics are problematic when applied to code fragments (revisions) written in multiple languages:
+            special parsers are required which may not support the language or dialect used; analysis tools may not
+            understand code fragments. We propose using the statistical moments of indentation as a lightweight,
+            language independent, revision/diff friendly metric which actually proxies classical complexity metrics. We
+            have extensively evaluated our approach against the entire CVS histories of the 278 of the most popular and
+            most active SourceForge projects. We found that our results are linearly correlated and rank-correlated with
+            traditional measures of complexity, suggesting that measuring indentation is a cheap and accurate proxy for
+            code complexity of revisions. Thus ranking revisions by the standard deviation and summation of indentation
+            will be very similar to ranking revisions by complexity.
+        </p>
         
 
         

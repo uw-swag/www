@@ -113,7 +113,33 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> Software is developed at a rapid pace. Software development techniques like continuous delivery have shortened the time between official releases of a software system from months or years to a matter of minutes. At the heart of this rapid release cycle of continuously delivered software is the build system, i.e., the system that specifies how source code is translated into deliverables. An efficient build system that quickly produces updated versions of a software system is required to keep up with market competitors. However, the benefits of an efficient build system come at a cost— build systems introduce overhead on the software development process. In this thesis, we use historical data from a large collection of software projects to perform four empirical studies. The focus of these empirical studies is on two types of software development overhead that are introduced by the build system. We first present three empirical studies that focus on the maintenance overhead introduced by the need to keep the build system in sync with the source code that it builds. We observe that: (1) although modern build technologies like Maven provide additional features, they tend to be prone to additional build maintenance activity and more prone to cloning, i.e., duplication of build logic, than older technologies like make; (2) although typical cloning rates are higher in build systems than in other software artifacts (e.g., source code), there are commonly-adopted patterns of creative build system abstraction that can keep build cloning rates low; and (3) properties of source and test code changes can be used to train accurate classifiers that indicate whether a co-change to the build system is necessary. We then present an empirical study that focuses on the execution overhead introduced by the slow nature of (re)generating system deliverables using a build system. We find that build optimization effort: (1) will yield more build performance improvement by focusing on build hotspots, i.e., files that are not only slow to rebuild, but also tend to change frequently; and (2) should be aligned with architectural refinement in order to yield the most benefit.</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Software is developed at a rapid pace. Software development techniques like continuous delivery have
+            shortened the time between official releases of a software system from months or years to a matter of
+            minutes. At the heart of this rapid release cycle of continuously delivered software is the build system,
+            i.e., the system that specifies how source code is translated into deliverables. An efficient build system
+            that quickly produces updated versions of a software system is required to keep up with market competitors.
+            However, the benefits of an efficient build system come at a cost — build systems introduce overhead
+            on the software development process.
+
+            In this thesis, we use historical data from a large collection of software projects to perform four
+            empirical studies. The focus of these empirical studies is on two types of software development overhead
+            that are introduced by the build system.
+
+            We first present three empirical studies that focus on the maintenance overhead introduced by the need to
+            keep the build system in sync with the source code that it builds. We observe that: (1) although modern
+            build technologies like Maven provide additional features, they tend to be prone to additional build
+            maintenance activity and more prone to cloning, i.e., duplication of build logic, than older technologies
+            like make; (2) although typical cloning rates are higher in build systems than in other software artifacts
+            (e.g., source code), there are commonly-adopted patterns of creative build system abstraction that can keep
+            build cloning rates low; and (3) properties of source and test code changes can be used to train accurate
+            classifiers that indicate whether a co-change to the build system is necessary.
+
+            We then present an empirical study that focuses on the execution overhead introduced by the slow nature of
+            (re)generating system deliverables using a build system. We find that build optimization effort: (1) will
+            yield more build performance improvement by focusing on build hotspots, i.e., files that are not only slow
+            to rebuild, but also tend to change frequently; and (2) should be aligned with architectural refinement in
+            order to yield the most benefit.
+        </p>
         
 
         

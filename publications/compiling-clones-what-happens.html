@@ -124,7 +124,21 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> Most clone detection techniques have focused on the analysis of source code, however, sometimes stakeholders have access only to compiled code. To address this, some approaches have been developed for finding similarities at the binary level. However, the precise relationships between source-level and binary-level similarities remains unclear: While a compiler will preserve the semantics of the source code in the transformation to an executable, the resulting binary may differ significantly in structure, including the addition and deletion of entities in the source model. Also, compilation sometimes acts as a kind of normalization, transforming syntactically different but semantically similar structures into the same binary-level representation. In this paper, we describe a preliminary study into the effects of the javac Java compiler on the results of clone detection. We use CCFinderX -- which can perform clone detection on sequences of arbitrary tokens -- to find clones in both the source code and the corresponding byte code of four large Java systems. The study shows that source code and byte code clone detection can produce significantly different results, especially for large programs. We report on a few typical examples of differences, and analyze how they are introduced by the compiler. Finally, we discuss the greater significance of this work, and sketch plans for expanded study.</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Most clone detection techniques have focused on the analysis of source code, however, sometimes
+            stakeholders have access only to compiled code. To address this, some approaches have been developed for
+            finding similarities at the binary level. However, the precise relationships between source-level and
+            binary-level similarities remains unclear: While a compiler will preserve the semantics of the source code
+            in the transformation to an executable, the resulting binary may differ significantly in structure,
+            including the addition and deletion of entities in the source model. Also, compilation sometimes acts as a
+            kind of normalization, transforming syntactically different but semantically similar structures into the
+            same binary-level representation. In this paper, we describe a preliminary study into the effects of the
+            javac Java compiler on the results of clone detection. We use CCFinderX -- which can perform clone detection
+            on sequences of arbitrary tokens -- to find clones in both the source code and the corresponding byte code
+            of four large Java systems. The study shows that source code and byte code clone detection can produce
+            significantly different results, especially for large programs. We report on a few typical examples of
+            differences, and analyze how they are introduced by the compiler. Finally, we discuss the greater
+            significance of this work, and sketch plans for expanded study.
+        </p>
         
 
         

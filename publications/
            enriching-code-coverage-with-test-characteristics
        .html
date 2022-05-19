@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enriching Code Coverage with Test Characteristics
+         - SWAG Lab</title>
+        <link rel="stylesheet" href="/www/assets/css/main.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+              integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+              crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="/www/assets/img/favicon.png"/>
+        
+
+    <link rel="stylesheet" href="/www/assets/css/publications/specific.css">
+
+
+    </head>
+
+    <body>
+
+        
+
+    <nav class="navbar navbar-expand-md navbar-dark mb-2 py-3 bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/www/"><img height="30px" width="119.3px" src="/www/assets/img/SWAGLogoWhite.png" alt="SWAG Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/www/index.html">Home</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/www/members.html">Members</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/www/publications.html">Publications</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/www/teaching.html">Teaching</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/www/tools.html">Tools</a>
+                        
+                    </li>
+                
+                    <li class="nav-item">
+                        
+                        
+                            <a class="nav-link" href="/www/funding-partners.html">Funding Partners</a>
+                        
+                    </li>
+                
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-3">
+
+        <h1 class="display-6">Enriching Code Coverage with Test Characteristics
+        </h1>
+
+        
+        
+            <p class="fs-4"><b>Authors:</b>
+                
+                    
+                        <a href="/www/members/shivashree-vysali.html"><span class="badge bg-secondary text-dark">Shivashree Vysali</span></a>
+                    
+                
+            </p>
+        
+
+        
+        <p class="fs-4"><b>Venue:</b>
+            
+            McGill University, 2021
+        </p>
+
+        
+            <p class="fs-4"><b>Year:</b>
+                <a href="/www/years/2021.html"><span
+                        class="badge bg-secondary text-dark">2021</span></a>
+            </p>
+        
+
+        
+        
+
+        
+        
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Code coverage measures the degree to which source code elements (e.g., statements, branches) are
+            invoked during testing. Despite growing evidence that coverage is a problematic measurement, it is often
+            used to make decisions about where testing effort should be invested. For example, using coverage as a
+            guide, tests should be written to invoke the non-covered program elements. At their core, coverage
+            measurements assume that invocation of a program element during any test is equally valuable and only
+            provide a binary covered-or-not classification of program elements. Yet in reality, tests have varied
+            characteristics and coverage can be enriched by incorporating these test characteristics. In this thesis, we
+            expand code coverage classification by adding scope (e.g., unit, function) and reliability (flaky vs.
+            robust) characteristics of the tests to the coverage report. We perform an empirical study of three large
+            software systems from the OpenStack community, namely, Nova, Neutron, and Cinder.
+
+            We generate an enriched statement coverage report and glean additional insights. We observe that 60.94% and
+            63.33% of statements are covered by both unit and functional tests in Neutron and Nova, respectively, while
+            only 30% are covered by both types of tests in Cinder. We find that systems are disproportionately impacted
+            by flakily covered statements with 5% and 10% of the covered statements in Nova and Neutron being flakily
+            covered, respectively, while <1% of Cinder statements are flakily covered. We also find that incidences
+            of flakily covered statements could not be well explained by solely using code characteristics, such as
+            dispersion, ownership, and development activity. In order to understand the cost effectiveness of enriching
+            code coverage, we propose GreedyFlake – a test effort prioritization algorithm to maximize return on
+            investment when tackling the problem of flakily covered program elements. We find that GreedyFlake
+            outperforms baseline approaches by at least eight percentage points of Area Under the Cost Effectiveness
+            Curve.
+        </p>
+        
+
+        
+
+        
+        
+
+        <p class="fs-4"><b>BibTeX:</b></p>
+        <div class="copy-code">
+            <pre><code>@mastersthesis{shivashreevysali2021eccwtc,
+    author = &#34;Shivashree Vysali&#34;,
+    title = &#34;Enriching Code Coverage with Test Characteristics
+        &#34;,
+    year = &#34;2021&#34;,
+    school = &#34;McGill University&#34;,
+    address = &#34;3480 Rue University, Montréal, QC, Canada&#34;
+}
+</code></pre>
+        </div>
+        <p class="fs-4"><b>Plain Text:</b></p>
+        <div class="copy-code">
+            <pre><code>Shivashree Vysali, &#34;Enriching Code Coverage with Test Characteristics
+        ,&#34; McGill University</code></pre>
+        </div>
+
+    </div>
+
+
+
+        <ul class="nav justify-content-center credits pt-4 pb-3">
+            <li class="nav-item">
+                <h6>Designed and built by <a target="_blank" href="https://vishnus.me">Vishnu Satish</a></h6>
+            </li>
+        </ul>
+
+        
+
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1220">
+    <div id="copy-toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-body">
+            Copied text.
+        </div>
+    </div>
+</div>
+
+        <script src="/www/assets/js/bootstrap.min.js"></script>
+        <script src="/www/assets/js/main.js"></script>
+
+    </body>
+
+</html>

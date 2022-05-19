@@ -128,7 +128,27 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> In recent years, Python has experienced explosive growth in adoption, particularly among open source projects. While Python's dynamically-typed nature provides developers with powerful programming abstractions, that same dynamic type system allows for type-related defects to accumulate in code bases. To aid in the early detection of type-related defects, type annotations were introduced into the Python ecosystem (i.e., PEP-484) and static type checkers like mypy have appeared on the market. While applying a type checker like mypy can in theory help to catch type-related defects before they impact users, little is known about the real impact of adopting a type checker to reveal defects in Python projects. In this paper, we study the extent to which Python projects benefit from such type checking features. For this purpose, we mine the issue tracking and version control repositories of 210 Python projects on GitHub. Inspired by the work of Gao et al. on type-related defects in JavaScript, we add type annotations to test whether detects an error that would have helped developers to avoid real defects. We observe that 15% of the defects could have been prevented by mypy. Moreover, we find that there is no significant difference between the experience level of developers committing type-related defects and the experience of developers committing defects that are not type-related. In addition, a manual analysis of the anti-patterns that most commonly lead to type-checking faults reveals that the redefinition of Python references, dynamic attribute initialization and incorrectly handled Null objects are the most common causes of type-related faults. Since our study is conducted on fixed public defects that have gone through code reviews and multiple test cycles, these results represent a lower bound on the benefits of adopting a type checker. Therefore, we recommend incorporating a static type checker like mypy into the development workflow, as not only will it prevent type-related defects but also mitigate certain anti-patterns during development.</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> In recent years, Python has experienced explosive growth in adoption, particularly among open source
+            projects. While Python's dynamically-typed nature provides developers with powerful programming
+            abstractions, that same dynamic type system allows for type-related defects to accumulate in code bases. To
+            aid in the early detection of type-related defects, type annotations were introduced into the Python
+            ecosystem (i.e., PEP-484) and static type checkers like mypy have appeared on the market. While applying a
+            type checker like mypy can in theory help to catch type-related defects before they impact users, little is
+            known about the real impact of adopting a type checker to reveal defects in Python projects. In this paper,
+            we study the extent to which Python projects benefit from such type checking features. For this purpose, we
+            mine the issue tracking and version control repositories of 210 Python projects on GitHub. Inspired by the
+            work of Gao et al. on type-related defects in JavaScript, we add type annotations to test whether detects an
+            error that would have helped developers to avoid real defects. We observe that 15% of the defects could have
+            been prevented by mypy. Moreover, we find that there is no significant difference between the experience
+            level of developers committing type-related defects and the experience of developers committing defects that
+            are not type-related. In addition, a manual analysis of the anti-patterns that most commonly lead to
+            type-checking faults reveals that the redefinition of Python references, dynamic attribute initialization
+            and incorrectly handled Null objects are the most common causes of type-related faults. Since our study is
+            conducted on fixed public defects that have gone through code reviews and multiple test cycles, these
+            results represent a lower bound on the benefits of adopting a type checker. Therefore, we recommend
+            incorporating a static type checker like mypy into the development workflow, as not only will it prevent
+            type-related defects but also mitigate certain anti-patterns during development.
+        </p>
         
 
         

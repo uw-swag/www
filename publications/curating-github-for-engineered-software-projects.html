@@ -128,7 +128,26 @@
 
         
         
-            <p class="fs-4 lh-sm"><b>Abstract:</b> Software forges like GitHub host millions of repositories. Software engineering researchers have been able to take advantage of such a large corpora of potential study subjects with the help of tools like GHTorrent and Boa. However, the simplicity in querying comes with a caveat: there are limited means of separating the signal (e.g. repositories containing engineered software projects) from the noise (e.g. repositories containing home work assignments). The proportion of noise in a random sample of repositories could skew the study and may lead to researchers reaching unrealistic, potentially inaccurate, conclusions. We argue that it is imperative to have the ability to sieve out the noise in such large repository forges. We propose a framework, and present a reference implementation of the framework as a tool called reaper, to enable researchers to select GitHub repositories that contain evidence of an engineered software project. We identify software engineering practices (called dimensions) and propose means for validating their existence in a GitHub repository. We used reaper to measure the dimensions of 1,857,423 GitHub repositories. We then used manually classified data sets of repositories to train classifiers capable of predicting if a given GitHub repository contains an engineered software project. The performance of the classifiers was evaluated using a set of 200 repositories with known ground truth classification. We also compared the performance of the classifiers to other approaches to classification (e.g. number of GitHub Stargazers) and found our classifiers to outperform existing approaches. We found stargazers-based classifier (with 10 as the threshold for number of stargazers) to exhibit high precision (97%) but an inversely proportional recall (32%). On the other hand, our best classifier exhibited a high precision (82%) and a high recall (86%). The stargazer-based criteria offers precision but fails to recall a significant portion of the population.</p>
+            <p class="fs-4 lh-sm"><b>Abstract:</b> Software forges like GitHub host millions of repositories. Software engineering researchers have been
+            able to take advantage of such a large corpora of potential study subjects with the help of tools like
+            GHTorrent and Boa. However, the simplicity in querying comes with a caveat: there are limited means of
+            separating the signal (e.g. repositories containing engineered software projects) from the noise (e.g.
+            repositories containing home work assignments). The proportion of noise in a random sample of repositories
+            could skew the study and may lead to researchers reaching unrealistic, potentially inaccurate, conclusions.
+            We argue that it is imperative to have the ability to sieve out the noise in such large repository forges.
+            We propose a framework, and present a reference implementation of the framework as a tool called reaper, to
+            enable researchers to select GitHub repositories that contain evidence of an engineered software project. We
+            identify software engineering practices (called dimensions) and propose means for validating their existence
+            in a GitHub repository. We used reaper to measure the dimensions of 1,857,423 GitHub repositories. We then
+            used manually classified data sets of repositories to train classifiers capable of predicting if a given
+            GitHub repository contains an engineered software project. The performance of the classifiers was evaluated
+            using a set of 200 repositories with known ground truth classification. We also compared the performance of
+            the classifiers to other approaches to classification (e.g. number of GitHub Stargazers) and found our
+            classifiers to outperform existing approaches. We found stargazers-based classifier (with 10 as the
+            threshold for number of stargazers) to exhibit high precision (97%) but an inversely proportional recall
+            (32%). On the other hand, our best classifier exhibited a high precision (82%) and a high recall (86%). The
+            stargazer-based criteria offers precision but fails to recall a significant portion of the population.
+        </p>
         
 
         
